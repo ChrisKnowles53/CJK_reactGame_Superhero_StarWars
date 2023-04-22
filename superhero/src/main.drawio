@@ -1,0 +1,60 @@
+<mxfile host="65bd71144e">
+    <diagram id="JOhSrmbVpuVVoCXuDtd_" name="Page-1">
+        <mxGraphModel dx="831" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.658;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.364;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="App" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="input&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="267" y="280" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="superheroViewer" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="props:&lt;br&gt;setInputtedName" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="160" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="User to enter string input into inpt field. i.e. superhero name. If superhero not found or no input, error handling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="380" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Fetch API by superhero name" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="340" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="import: &lt;br&gt;input, &lt;br&gt;superheroViewer, &lt;br&gt;useState (is inputtedNme)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="10" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="renders: Input, SuperheroViewer, Random Superhero" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="435" y="80" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="display name, image, stats" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="340" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="prop: inputtedName" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="180" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Random Superhero" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="190" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="useEffect used to handle api Fetch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="280" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Wait for user to select superhero before this function fires&lt;br&gt;&lt;br&gt;fetch api by id number&lt;br&gt;generate random number as the id&lt;br&gt;display name, image, stats" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="240" width="120" height="160" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header {
+  min-height: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: "Sigmar", cursive;
+  font-size: 75px;
+}
+
+a {
+  
+  color: yellow;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
