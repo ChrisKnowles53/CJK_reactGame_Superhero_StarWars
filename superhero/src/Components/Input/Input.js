@@ -1,10 +1,5 @@
 import { useState } from "react";
 
-/* 
-create a function that takes a string into an input
-set the use state to a default
-create submit button
- */
 
 export default function Input({ setInputtedName }) {
   const [superheroName, setSuperheroName] = useState("");
