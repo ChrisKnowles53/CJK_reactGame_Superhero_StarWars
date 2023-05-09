@@ -1,24 +1,7 @@
 import { useEffect, useState } from "react";
 
-// import stuff (useEffect and useState)
-// create a function component called SuperheroViewer
-// create a state variable called superhero and a function to set it
-// call the superhero API with the superhero name: https://www.superheroapi.com/api.php/10101936834886394/search/${name}
-// export the component
-
-function SuperheroViewer({inputtedName}) {
-  const [superhero, setSuperhero] = useState("");
-
-  useEffect(() => {
-    async function getSuperhero() {
-      const response = await fetch(
-        `https://www.superheroapi.com/api.php/10101936834886394/search/${inputtedName}`
-      );
-      const data = await response.json();
-      setSuperhero(data.results[0]);
-    }
-    getSuperhero();
-  }, [inputtedName]);
+function SuperheroViewer({superhero}) {
+  
 
   return (
     <section>

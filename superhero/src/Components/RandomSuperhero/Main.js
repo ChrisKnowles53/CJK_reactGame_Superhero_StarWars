@@ -1,19 +1,8 @@
-import {useState, useReducer, useEffect} from 'react' 
 
-function RandomSuperhero({id, randomSuperhero, setRandomSuperhero}) {
-    // const [randomSuperhero, setRandomSuperhero] = useState({});
-  
-    useEffect(() => {
-      async function fetchData() {
-        const response = await fetch(
-          `https://www.superheroapi.com/api.php/10101936834886394/${id}`
-          
-        );
-        const data = await response.json();
-        setRandomSuperhero(data);
-      }
-      fetchData();
-    }, [id]);
+
+
+function RandomSuperhero({randomSuperhero}) {
+   
   
     return (
       <section>
