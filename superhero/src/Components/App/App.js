@@ -8,6 +8,8 @@ function App() {
   const [inputtedName, setInputtedName] = useState("");
   const [id, setId] = useState();
 
+  const [randomSuperhero, setRandomSuperhero] = useState({});
+
   function randomise() {
     const randomNumber = Math.floor(Math.random() * 732);
     setId(randomNumber);
@@ -39,7 +41,7 @@ function App() {
             </td>
 
             <td>
-              <RandomSuperhero id={id} />
+              <RandomSuperhero id={id} randomSuperhero={randomSuperhero} setRandomSuperhero={setRandomSuperhero}/>
             </td>
           </tr>
         </tbody>

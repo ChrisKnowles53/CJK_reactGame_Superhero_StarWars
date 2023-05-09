@@ -1,7 +1,7 @@
 import {useState, useReducer, useEffect} from 'react' 
 
-function RandomSuperhero({id}) {
-    const [randomSuperhero, setRandomSuperhero] = useState({});
+function RandomSuperhero({id, randomSuperhero, setRandomSuperhero}) {
+    // const [randomSuperhero, setRandomSuperhero] = useState({});
   
     useEffect(() => {
       async function fetchData() {
