@@ -42,9 +42,6 @@ function App() {
     <div className="App">
       <header className="App-header">Superheroes Assemble 💪🏻</header>
 
-      {superhero?.length > 0 && randomSuperhero?.length > 0 && 
-      <GameLogic superhero={superhero} randomSuperhero={randomSuperhero}  />}
-
       <Input setInputtedName={setInputtedName} />
       <p>
         If you need any superhero names, here is a
@@ -73,10 +70,11 @@ function App() {
           </tr>
         </tbody>
       </table>
+      {superhero && (
+        <GameLogic superhero={superhero} randomSuperhero={randomSuperhero} />
+      )}
     </div>
   );
 }
 
 export default App;
-
-
