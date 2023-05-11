@@ -11,7 +11,6 @@ function RandomSuperhero({ randomSuperhero }) {
           <p>Durability: {randomSuperhero.powerstats.durability}</p>
           <p>Power: {randomSuperhero.powerstats.power}</p>
           <p>Combat: {randomSuperhero.powerstats.combat}</p>
-          <p>id: {randomSuperhero.id}</p>
         </div>
       )}
     </section>

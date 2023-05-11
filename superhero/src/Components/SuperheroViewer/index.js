@@ -13,7 +13,6 @@ function SuperheroViewer({ superhero }) {
           <p>Durability: {superhero.powerstats.durability}</p>
           <p>Power: {superhero.powerstats.power}</p>
           <p>Combat: {superhero.powerstats.combat}</p>
-          <p>id: {superhero.id}</p>
         </div>
       )}
     </section>
