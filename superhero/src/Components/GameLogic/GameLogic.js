@@ -15,22 +15,33 @@ function GameLogic({ superhero, randomSuperhero }) {
   let userIntelligence = 0;
   let randomIntelligence = 0;
   // compare intelligence
+  if (superhero && superhero.powerstats && superhero.powerstats.intelligence) {
+    userIntelligence = superhero.powerstats.intelligence;
+  }
+  // superhero && (userIntelligence = superhero.powerstats.intelligence);
 
-  superhero && (userIntelligence = superhero.powerstats.intelligence);
+  if (
+    randomSuperhero &&
+    randomSuperhero.powerstats &&
+    randomSuperhero.powerstats.intelligence
+  ) {
+    randomIntelligence = randomSuperhero.powerstats.intelligence;
+  }
+  console.log(randomIntelligence + "randomIntelligence");
+  console.log(userIntelligence);
+  // randomSuperhero &&
+  //   (randomIntelligence = randomSuperhero.powerstats.intelligence);
 
-  randomSuperhero &&
-    (randomIntelligence = randomSuperhero.powerstats.intelligence);
-
-  let result = "";
+  let resultAnswer = "";
   if (userIntelligence > randomIntelligence) {
-    result = "user wins";
-  } else if (userIntelligence < randomIntelligence) {
-    result = "computer wins";
+    resultAnswer = "user wins";
+  } else {
+    resultAnswer = "computer wins";
   }
 
   return (
     <section>
-      <h2>{result}</h2>
+      <h2>{resultAnswer}</h2>
     </section>
   );
 }

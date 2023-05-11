@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-function SuperheroViewer({superhero}) {
-  
-
+function SuperheroViewer({ superhero }) {
   return (
     <section>
       {superhero && ( // if superhero is truthy, render the following
@@ -15,6 +13,7 @@ function SuperheroViewer({superhero}) {
           <p>Durability: {superhero.powerstats.durability}</p>
           <p>Power: {superhero.powerstats.power}</p>
           <p>Combat: {superhero.powerstats.combat}</p>
+          <p>id: {superhero.id}</p>
         </div>
       )}
     </section>
