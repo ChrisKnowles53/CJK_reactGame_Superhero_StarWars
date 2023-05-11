@@ -16,7 +16,7 @@ function GameLogic({ superhero, randomSuperhero }) {
   let randomIntelligence = 0;
   // compare intelligence
   if (superhero && superhero.powerstats && superhero.powerstats.intelligence) {
-    userIntelligence = superhero.powerstats.intelligence;
+    userIntelligence = parseInt(superhero.powerstats.intelligence);
   }
   // superhero && (userIntelligence = superhero.powerstats.intelligence);
 
@@ -25,7 +25,7 @@ function GameLogic({ superhero, randomSuperhero }) {
     randomSuperhero.powerstats &&
     randomSuperhero.powerstats.intelligence
   ) {
-    randomIntelligence = randomSuperhero.powerstats.intelligence;
+    randomIntelligence = parseInt(randomSuperhero.powerstats.intelligence);
   }
   console.log(randomIntelligence + "randomIntelligence");
   console.log(userIntelligence);
