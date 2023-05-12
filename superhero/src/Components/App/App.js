@@ -44,7 +44,7 @@ function App() {
 
       <Input setInputtedName={setInputtedName} />
       <p>
-        If you need any superhero names, here is a
+        If you need a suggestion, here is a
         <a href="https://superheroapi.com/ids.html" target="_blank">
           {" "}
           list
@@ -55,6 +55,7 @@ function App() {
         <thead>
           <tr>
             <th>User</th>
+            <th></th>
             <th>Computer</th>
           </tr>
         </thead>
@@ -63,6 +64,8 @@ function App() {
             <td>
               <SuperheroViewer superhero={superhero} />
             </td>
+
+            <td>hhhhhhh</td>
 
             <td>
               <RandomSuperhero randomSuperhero={randomSuperhero} />
